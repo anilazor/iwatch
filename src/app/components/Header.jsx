@@ -15,26 +15,27 @@ const Header = () => {
             <a href="">iPhone</a>
           </li>
           <li>
-            <a href="">iPad</a>
+     <p>       <a href="">iPad</a></p>
           </li>
           <li>
             <a className="active" href="">
               iWatch
             </a>
           </li>
-          <li>
+           <li>
             <a href="">Support</a>
           </li>
         </ul>
-      </nav>
-      <div className="buttons">
+        </nav>
+        <div className="buttons">
         <a href="">
           <Image src="/search.svg" alt="Search icon" width={20} height={20} />{" "}
         </a>
         <a href="">
           <Image src="/shopping-bag.svg" alt="shopping-bag icon" width={20} height={20} />{" "}
         </a>
-      </div>
+        </div>
+      
     </header>
   );
 };

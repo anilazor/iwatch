@@ -15,6 +15,7 @@ const Products = () => {
         <div className={selectedImage === "/ocean.png" ? "ocean active" : "ocean"} onClick={() => setSelectedImage("/ocean.png")}></div>
         <div className={selectedImage === "/mint.png" ? "mint active" : "mint"} onClick={() => setSelectedImage("/mint.png")}></div>
       </div>
+
       <Options setSelectedImage={setSelectedImage} />
     </div>
   );

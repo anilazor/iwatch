@@ -8,7 +8,6 @@ export default function Home() {
     <section>
       <Quote />
       <Products />
-      {/* <Options /> */}
       <Button />
     </section>
   );

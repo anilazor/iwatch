@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Options = ({ setSelectedImage }) => {
   return (
-    <div className="options-wrapper">
+    <div className="options">
       <a onClick={() => setSelectedImage("/navy.png")}>
         <Image src="/navy.png" alt="Picture of iWatch in the color 'navy'" width={80} height={80} />
       </a>
