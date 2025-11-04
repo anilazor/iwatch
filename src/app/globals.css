@@ -22,7 +22,11 @@
 
 @layer components {
   :root {
-    --background: linear-gradient(294deg, rgba(200, 220, 229, 1) 0%, rgba(182, 204, 218, 1) 100%);
+    --background: linear-gradient(
+      294deg,
+      rgba(200, 220, 229, 1) 0%,
+      rgba(182, 204, 218, 1) 100%
+    );
     --foreground: #ffffff;
   }
 
@@ -32,7 +36,13 @@
     font-family: var(--montserrat);
     height: 100svh;
     display: grid;
-    grid-template-columns: [full-start] minmax(0, 50px) [content-start] 2fr [left-end] 1.4fr [right-end] 20px [content-end] minmax(0, 50px) [full-end];
+    grid-template-columns: [full-start] minmax(
+        0,
+        50px
+      ) [content-start] 2fr [left-end] 1.4fr [right-end] 20px [content-end] minmax(
+        0,
+        50px
+      ) [full-end];
     grid-template-rows: 150px 450px 80px 60px;
 
     > * {
@@ -46,7 +56,6 @@
     grid-template-rows: subgrid;
     grid-row-start: 2;
     grid-row-end: 4;
-    /* display: contents; */
   }
 
   header {
@@ -128,7 +137,6 @@
   }
 
   .display {
-    /* display: flex; */
     grid-column-start: left-end;
     grid-column-end: content-end;
     grid-row-start: 1;
