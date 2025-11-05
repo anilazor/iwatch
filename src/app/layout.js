@@ -15,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable}  antialiased`}>
+      <body
+        className={`bg-gradient font-montserrat grid grid-cols-(--body-cols) grid-rows-(--body-rows) text-(--foreground)`}
+      >
         <Header />
 
         {children}

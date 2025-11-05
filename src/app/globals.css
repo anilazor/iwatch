@@ -1,4 +1,5 @@
-/* @import "tailwindcss"; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
 
 @layer reset {
   * {
@@ -20,36 +21,61 @@
   }
 }
 
+@theme inline {
+  --font-montserrat: "Montserrat", sans-serif;
+  --foreground: #ffffff;
+  --body-cols: 50px 2fr 1.4fr 20px 50px;
+  --body-rows: 150px 450px 100px 90px;
+}
+
 @layer components {
-  :root {
-    --background: linear-gradient(294deg, rgba(200, 220, 229, 1) 0%, rgba(182, 204, 218, 1) 100%);
+  /* :root {
+    --background: linear-gradient(
+      294deg,
+      rgba(200, 220, 229, 1) 0%,
+      rgba(182, 204, 218, 1) 100%
+    );
     --foreground: #ffffff;
+  } */
+
+  .bg-gradient {
+    background: linear-gradient(
+      294deg,
+      rgba(200, 220, 229, 1) 0%,
+      rgba(182, 204, 218, 1) 100%
+    );
   }
 
-  body {
+  /* body {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--montserrat);
     height: 100svh;
     display: grid;
-    grid-template-columns: [full-start] minmax(0, 50px) [content-start] 2fr [left-end] 1.4fr [right-end] 20px [content-end] minmax(0, 50px) [full-end];
+    grid-template-columns:
+      [full-start] minmax(0, 50px)
+      [content-start] 2fr [left-end] 1.4fr [right-end] 20px [content-end] minmax(
+        0,
+        50px
+      )
+      [full-end];
     grid-template-rows: 150px 450px 80px 60px;
 
     > * {
       grid-column: content-start / content-end;
     }
-  }
+  } */
 
-  section {
+  /* section {
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
     grid-row-start: 2;
     grid-row-end: 4;
-    /* display: contents; */
-  }
 
-  header {
+  } */
+
+  /* header {
     grid-column: content-start / content-end;
     height: 100px;
     display: flex;
@@ -67,16 +93,12 @@
         padding-inline: 2.3rem;
       }
     }
-  }
-  .quote-wrapper {
+  } */
+  /* .quote-wrapper {
     grid-column: content-start / left-end;
     align-self: center;
 
     grid-row: 1 span 1;
-
-    /* > * + * {
-      margin-block: 2rem;
-    } */
 
     h1,
     h2 {
@@ -92,8 +114,8 @@
     h2 {
       font-weight: 400;
     }
-  }
-
+  } */
+  /* 
   button {
     font-family: inherit;
     font-weight: 500;
@@ -108,9 +130,9 @@
     grid-row: 2 span 1;
     grid-column: content-start / left-end;
     align-self: start;
-  }
+  } */
 
-  .products-wrapper {
+  /* .products-wrapper {
     grid-column: left-end / content-end;
     display: grid;
     grid-template-columns: subgrid;
@@ -128,16 +150,15 @@
   }
 
   .display {
-    /* display: flex; */
     grid-column-start: left-end;
     grid-column-end: content-end;
     grid-row-start: 1;
     grid-row-end: 2;
     justify-content: center;
     align-self: start;
-  }
+  } */
 
-  .colors {
+  /* .colors {
     grid-column-start: right-end;
     grid-column-end: content-end;
     grid-row: 2;
@@ -166,10 +187,24 @@
     .mint {
       background: #58d7c4;
     }
-    .active {
-      outline: 2px solid white;
-      width: 25px;
-      height: 25px;
+   
+  } */
+
+  /* .colors > * {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-block: 1rem;
+    justify-self: center;
+
+    &:hover {
+      cursor: pointer;
     }
+  } */
+
+  .active {
+    outline: 2px solid white;
+    width: 25px;
+    height: 25px;
   }
 }
